@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+@import url('fontes/PassionOne-Regular.ttf');
+
+@import url('fontes/Sriracha-Regular.ttf');
+
+@font-face {
+    font-family: 'titulo';
+    src: url('fontes/PassionOne-Regular.ttf') format(truetype);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'padrao';
+    src: url('fontes/Sriracha-Regular.ttf') format(truetype);
+    font-weight: normal;
+}
+
+:root {
+    --fonte-destaque: 'titulo';
+    --fonte-padrao: 'padrao';
+    --fonte-normal: 'verdana';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+    margin: 0px;
+}
+
+h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 10vw;
+    font-variant: small-caps;
+}
+
+header > p {
+    color: white;
+    font-family: var(--fonte-normal);
+    font-size: 1em;
+    font-weight: normal;
+}
+
+a {
+    color: white;
+    font-family: var(--fonte-normal);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: var(--fonte-padrao);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+}
+
+section > p {
+    font-size: 3.5vw;
+    padding: 50px;
+    line-height: 2em;
+}
+
+.normal {
+    background-color: white;
+}
+
+.imagem {
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    box-shadow: inset 0px 0px 20px 18px rgba(0, 0, 0, 0.418);
+    background-position: center center;
+}
+
+#fundo1 {
+    background-image: url(imagens/background001.jpg);
+}
+
+#fundo2 {   
+    background-image: url(imagens/background002.jpg);
+}
+
+#fundo1 > p {
+    background-color: rgba(0, 0, 0, 0.493);
+    width: fit-content;
+}
+
+#fundo2 > p {
+    background-color: rgba(0, 0, 0, 0.493);
+    width: fit-content;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 2em;
+    padding-top: 10px;
+    font-family: var(--fonte-normal);
+    max-width: 400px;
+}
+
