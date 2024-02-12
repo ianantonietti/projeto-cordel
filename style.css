@@ -76,8 +76,8 @@ section {
 }
 
 section > p {
-    font-size: 3.5vw;
-    padding: 50px;
+    font-size: 4vw;
+    padding-bottom: 40px;
     line-height: 2em;
 }
 
@@ -104,11 +104,13 @@ section > p {
 #fundo1 > p {
     background-color: rgba(0, 0, 0, 0.493);
     width: fit-content;
+    padding: 5px;
 }
 
 #fundo2 > p {
     background-color: rgba(0, 0, 0, 0.493);
     width: fit-content;
+    padding: 5px;
 }
 
 footer {
@@ -118,6 +120,6 @@ footer {
     height: 2em;
     padding-top: 10px;
     font-family: var(--fonte-normal);
-    max-width: 400px;
+    font-size: 12px;
 }
 
